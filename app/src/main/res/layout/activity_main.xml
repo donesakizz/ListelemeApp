@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.SearchView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:id="@+id/arama"
+        app:iconifiedByDefault="false"
+        app:queryHint="Burada  Arayın..."
+        android:focusable="false"
+        android:background="@drawable/lavender_boyutu"
+        app:closeIcon="@drawable/baseline_clear_24"
+        app:searchIcon="@drawable/baseline_search_24"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recyclerView"
+        android:scrollbars="vertical"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/arama"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fBtnNotEkle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="50dp"
+        android:backgroundTint="@color/green"
+        android:src="@drawable/baseline_note_add_24"
+        android:tint="@color/white" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fBtnCikis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="120dp"
+        android:layout_marginBottom="50dp"
+        android:backgroundTint="@color/red"
+        android:src="@drawable/baseline_logout_24"
+        android:tint="@color/white" />
+
+</RelativeLayout>
